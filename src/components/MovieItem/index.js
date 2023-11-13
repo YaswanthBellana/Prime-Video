@@ -19,7 +19,11 @@ const MovieItem = props => {
       >
         {close => (
           <div className="modal-container">
+            <label htmlFor="closeButton" className="sr-only">
+              Close Popup
+            </label>
             <button
+              id="closeButton"
               className="close-button"
               type="button"
               onClick={() => close()}
